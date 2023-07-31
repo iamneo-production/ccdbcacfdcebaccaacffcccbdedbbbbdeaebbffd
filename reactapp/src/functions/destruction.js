@@ -8,4 +8,4 @@ function getUserIpDetails(userResponse = {}) {
     return [first, second, third].sort();
   }
   
-  export {getUserIpDetails,getTopThree}
+  export { getUserIpDetails,getTopThree};
