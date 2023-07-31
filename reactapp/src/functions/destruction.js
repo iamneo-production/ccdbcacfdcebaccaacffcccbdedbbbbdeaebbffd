@@ -4,11 +4,8 @@ function getUserIpDetails(userResponse = {}) {
   }
   
   function getTopThree(studentMarks = []) {
-    const [first = null, second = null, thirdMark = null] = studentMarks;
-    return [first, second, thirdMark].sort();
+    const [first = null, second = null, third = null, ...rest] = studentMarks;
+    return [first, second, third].sort();
   }
   
-  // console.log(getTopThree([10, 20, 30])); // [10, 20, 30]
-  // console.log(getTopThree([10])); // [10, null, null]
-  
-  export { getUserIpDetails,getTopThree};
+  export {getUserIpDetails,getTopThree}
